@@ -1,0 +1,1 @@
+# <div align="center">sessionVar - 全局参数</div> #
