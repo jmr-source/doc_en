@@ -4,7 +4,7 @@
 
 &lt;t:action&gt;
 <pre>
-得到任务的action类。
+得到任务的action类
 </pre>
 
 #### 说明 ####

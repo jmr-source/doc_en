@@ -18,7 +18,7 @@
 * <a href="tag-task-group.html"><t:group/></a>：模型组
 * <a href="tag-task-action.html"><t:action/></a>：action类
 * <a href="tag-task-template.html"><t:template/></a>：模板路径
-* <a href="tag-task-directory.html"><t:directory/></a>:生成文件所在目录
+* <a href="tag-task-directory.html"><t:directory/></a>：生成文件所在目录
 * <a href="tag-task-name.html"><t:name/></a>：生成文件名
 * <a href="tag-task-ext.html"><t:ext/></a>：生成文件扩展名
 * <a href="tag-task-encoding.html"><t:encoding/></a>：生成文件编码
