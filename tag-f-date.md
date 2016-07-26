@@ -5,10 +5,11 @@
 Formatting time
 </pre>
 
-#### Explain ####
+#### Description ####
 
 <pre>
-According to the time to fill in the tag string, the output of the time, or set the time format parameters
+According to the time to fill in the tag string, 
+the output of the time, or set the time format parameters
 </pre>
 
 #### Property ####
@@ -82,12 +83,12 @@ long: 11:59:59 PM CST
 #### Other ####
 
 <pre>
-If the var property is set, the result will not be output
+If the var is set, the result will not be output
 </pre>
 
 ----------
 
-#### Example Demonstration ####
+#### Examples ####
 
 <pre>
 Example 1
