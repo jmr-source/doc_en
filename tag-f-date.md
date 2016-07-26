@@ -1,96 +1,96 @@
-# <div align="center">f:date - 格式化时间</div> #
+# <div align="center">f:date - Formatting Time</div> #
 
 &lt;f:date&gt;
 <pre>
-格式化时间
+Formatting time
 </pre>
 
-#### 说明 ####
+#### Explain ####
 
 <pre>
-根据标签内填写的时间字符串，输出格式化的时间，或者设置格式化的时间参数
+According to the time to fill in the tag string, the output of the time, or set the time format parameters
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>var（可选）</b>
-存储格式化日期的变量
-注：如果设置了var属性，不会输出结果
-</pre>
-
-<pre>
-<b>setScope（可选）</b>
-设置变量的作用域
-
-<b>属性</b>
-context:设置变量到context中（默认）
-session:设置变量到session中
+<b>var（optional）</b>
+Set the variable to format the date
+Note: if the var property is set, the result will not be output
 </pre>
 
 <pre>
-<b>pattern（可选）</b>
-格式化的样式
-如：yyyy-MM-dd、yyyy-MM-dd HH:mm:ss
-具体用法参考java.text.DateFormat
+<b>setScope（optional）</b>
+Set the scope of the variable
+
+<b>Property</b>
+context:Set variable to context(default)
+session:Set variable to session
 </pre>
 
 <pre>
-<b>type（可选）</b>
-类型
-
-<b>属性</b>
-date:日期（默认）
-time:时间
-both:日期和时间
+<b>pattern（optional）</b>
+Format pattern
+e.g.：yyyy-MM-dd、yyyy-MM-dd HH:mm:ss
+Specific usage reference java.text.DateFormat
 </pre>
 
 <pre>
-<b>locale（可选）</b>
-区域语言，默认为当前区域的语言（如中文zh，英文en等）
+<b>type（optional）</b>
+Date type
+
+<b>Property</b>
+date:date type(default)
+time:time type
+both:date and time type
 </pre>
 
 <pre>
-<b>timeZone（可选）</b>
-区域时区，默认当前区域的时区
-如：
-中国上海的时区是 Asia/Shanghai
-美国洛杉矶时区是 America/Los_Angeles
-所有时区id，请参考java.util.TimeZone.getAvailableIDs()
+<b>locale（optional）</b>
+Set the language of date, default is the local language(e.g. English is en, Chinese is zh)
 </pre>
 
 <pre>
-<b>dateStyle（可选）</b>
-日期样式
+<b>timeZone（optional）</b>
+Set the timeZone of date, default is the local timeZone
+e.g.：
+Shanghai,China is Asia/Shanghai
+Los Angeles,America is America/Los_Angeles
+All time zones ID, please refer to java.util.TimeZone.getAvailableIDs()
+</pre>
 
-<b>属性</b>
-default:默认样式，同MEDIUM 2004-5-31
+<pre>
+<b>dateStyle（optional）</b>
+Date style
+
+<b>Property</b>
+default:default style is medium. 2004-5-31
 medium:2004-5-31
 short:04-5-31
-long:2004年5月31日
-full:2004年5月31日 星期一
+long:May 31, 2004
+full:Monday, May 31, 2004
 </pre>
 
 <pre>
-<b>timeStyle（可选）：时间样式。</b>
-default:默认样式，同MEDIUM. 23:59:59
+<b>timeStyle（optional）：Time style.</b>
+default:default style is medium. 11:59:59 PM
 medium: 23:59:59
-short: 下午11:59
-long: 下午11时59分59秒
+short: 11:59:59 PM CST
+long: 11:59:59 PM CST
 </pre>
 
-#### 其它 ####
+#### Other ####
 
 <pre>
-如果设置了var属性，不会输出结果
+If the var property is set, the result will not be output
 </pre>
 
 ----------
 
-#### 实例演示 ####
+#### Example Demonstration ####
 
 <pre>
-例子1
+Example 1
 </pre>
 
 ![](image/f_date_tag_template1.png)
