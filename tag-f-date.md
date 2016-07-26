@@ -1,8 +1,8 @@
-# <div align="center">f:date - Formatting Time</div> #
+# <div align="center">f:date - Formatting Date</div> #
 
 &lt;f:date&gt;
 <pre>
-Formatting time
+Formatting date
 </pre>
 
 #### Description ####
