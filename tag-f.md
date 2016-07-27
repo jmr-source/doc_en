@@ -1,43 +1,44 @@
-# <div align="center">f - 格式化</div> #
+# <div align="center">f - Format</div> #
 
 
 &lt;f&gt;
 <pre>
-用于格式化输出
+For formatting output
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-把标签内的文本按指定格式输出。
+Output the text in the label to the specified format.
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>partten（必须）</b>
-使用指定的格式字符串和参数来格式化字符串
-参考java的方法String.format(String fmt, Object... args)
-</pre>
-
-<pre>
-<b>values（可选）</b>
-指定参数，可填写多个参数，每个参数用","隔开
+<b>partten（required）</b>
+Format a string using the specified format string and arguments
+Reference Java method String.format(String fmt, Object... args)
 </pre>
 
 <pre>
-<b>valueScope（可选）</b>
-变量的作用域
-
-<b>属性</b>
-context:从context中得到变量（默认）
-session:从session中得到变量
+<b>values（optional）</b>
+The specified parameters, multiple parameters can be filled, 
+each with "," separated
 </pre>
 
-#### 其它 ####
+<pre>
+<b>valueScope（optional）</b>
+The scope of the variable
+
+<b>property</b>
+context:Get variable from context(default)
+session:Get variable from session
+</pre>
+
+#### Other ####
 
 <pre>
-这个标签有2种格式
+There are 2 formats for this label
 1.&lt;f parrten="" values=""/&gt;
 
 e.g.
@@ -55,17 +56,17 @@ e.g.
 
 ----------
 
-#### 实例演示 ####
+#### Examples ####
 
 <pre>
-<b>具体用法请参考：String.format(String fmt, Object... args)</b>
+<b>Please refer to the specific usage：String.format(String fmt, Object... args)</b>
 String fmt     --&gt;   parrten = ""
 Object... args --&gt;   values = ""
-<b>占位符完整格式为： %[index$][标识]*[最小宽度][.精度]转换符</b>
+<b>Complete placeholder format： %[index$][flags]*[width][.precision]conversion</b>
 </pre>
 
 <pre>
-例子1
+Example 1
 </pre>
 
 ![](image/f_tag_template1.png)
@@ -73,13 +74,15 @@ Object... args --&gt;   values = ""
 ![](image/f_tag_result1.png)
 
 <pre>
-例子2
+Example 2
 </pre>
 
 ![](image/f_tag_template2.png)
 
 <pre>
-请在eclipse外部打开生成的文件，eclipse由于字体大小问题，显示内容可能不对齐。
+Please open the generated file outside the eclipse, 
+eclipse due to the font size problem, 
+the display content may not be aligned.
 </pre>
 
 ![](image/f_tag_result2.png)

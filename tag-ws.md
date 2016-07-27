@@ -1,35 +1,38 @@
-# <div align="center">ws - 空格</div> #
+# <div align="center">ws - Space</div> #
 
 &lt;ws&gt;
 <pre>
-在模板中输出空格
+Output space in the template
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-在模板中输出空格，并可指定输出的空格数量。
+Output in the template space, and the number of spaces can 
+be specified.
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>count（可选）</b>
-指定输出的空格数量，值必须为正整数
+<b>count（optional）</b>
+The number of space characters in the output, 
+the value must be a positive integer
 </pre>
 
-#### 其它 ####
+#### Other ####
 
 <pre>
-其功能也可在模板中敲入空格，或者由&lt;% out.wirte(" "); %&gt;实现。
+The function can also be typed in the template space, 
+or by &lt;% out.wirte(" "); %&gt; implementation.
 </pre>
 
 ----------
 
-#### 实例演示 ####
+#### Examples ####
 
 <pre>
-例子1
+Example 1
 </pre>
 
 ![](image/ws_tag_template1.png)
