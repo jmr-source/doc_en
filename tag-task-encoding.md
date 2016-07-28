@@ -1,8 +1,8 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:encoding - 生成文件编码</div> ###
+### <div align="center">t:encoding - Generate File Encoding</div> ###
 
 &lt;t:encoding&gt;
 <pre>
-得到任务的生成文件编码
+Get task generated file encoding
 </pre>

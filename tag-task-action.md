@@ -1,14 +1,15 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:action - action类</div> ###
+### <div align="center">t:action - action</div> ###
 
 &lt;t:action&gt;
 <pre>
-得到任务的action类
+Get the task of the action class
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-得到的是完整的类名（包名+类名），如果任务没有指定，则输出空字符。
+Get the full class name (package name + class name), 
+if the task is not specified, the output is null.
 </pre>

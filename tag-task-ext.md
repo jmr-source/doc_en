@@ -1,8 +1,8 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:ext - 生成文件扩展名</div> ###
+### <div align="center">t:ext - Generate File Extension</div> ###
 
 &lt;t:ext&gt;
 <pre>
-得到任务的生成文件扩展名
+Get the task generated file extension
 </pre>

@@ -1,8 +1,8 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:name - 生成文件名</div> ###
+### <div align="center">t:name - Generate File Name</div> ###
 
 &lt;t:name&gt;
 <pre>
-得到任务的生成文件名
+Get the task generated file name
 </pre>
