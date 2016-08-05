@@ -24,7 +24,7 @@ Note: if the var property is set, the result will not be output
 <b>setScope（optional）</b>
 Set the scope of the variable
 
-<b>Property</b>
+<b>property</b>
 context:Set variable to context(default)
 session:Set variable to session
 </pre>
@@ -40,7 +40,7 @@ Specific usage reference java.text.DateFormat
 <b>type（optional）</b>
 Date type
 
-<b>Property</b>
+<b>property</b>
 date:date type(default)
 time:time type
 both:date and time type
@@ -64,7 +64,7 @@ All time zones ID, please refer to java.util.TimeZone.getAvailableIDs()
 <b>dateStyle（optional）</b>
 Date style
 
-<b>Property</b>
+<b>property</b>
 default:default style is medium. 2004-5-31
 medium:2004-5-31
 short:04-5-31

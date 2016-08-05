@@ -1,42 +1,46 @@
-# <div align="center">tab - 制表</div> #
+# <div align="center">tab - Tab</div> #
 
 &lt;tab&gt;
 <pre>
-在模板中输出制表符
+Output tab in the template
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-在模板中输出制表符，并可指定输出的制表符数量。
+Output tab in the template, and the number of tabs that can 
+be specified.
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>count（可选）</b>
-指定输出的制表符数量，值必须为正整数
+<b>count（optional）</b>
+The number of tab characters in the output, 
+the value must be a positive integer
 </pre>
 
-#### 其它 ####
+#### Other ####
 
 <pre>
-在模板中输入"\t",并不能真正输出制表符和实现制表操作，
-而只能输出字符"\t"本身的字符。所以需要用这个标签输出。
-其功能也可由&lt;% out.wirte("\t"); %&gt;实现。
+Enter the "\t" in the template, and can not really output tabs 
+and achieve the tab operation, and can only output the character 
+"\t" itself. So you need to use this tag to output. Its function 
+also can be made by &lt;% out.wirte("\t"); %&gt; realization.
 </pre>
 
 ----------
 
-#### 实例演示 ####
+#### Examples ####
 
 <pre>
-例子1
+Example 1
 </pre>
 
 ![](image/tab_tag_template1.png)
 
 <pre>
-请在eclipse外部打开生成的文件，eclipse由于字体大小问题，显示内容可能不对齐。
+Please open the generated file outside the eclipse, eclipse due 
+to the font size problem, the display content may not be aligned.
 </pre>
 ![](image/tab_tag_result1.png)

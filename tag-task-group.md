@@ -1,14 +1,15 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:group - 模型组</div> ###
+### <div align="center">t:group - group</div> ###
 
 &lt;t:group&gt;
 <pre>
-得到任务的模型组名
+Task model group name
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-得到任务的模型组名，如果任务没有指定，则输出空字符。
+Get the model group name of the task, if the task is not specified, 
+then the output null character.
 </pre>

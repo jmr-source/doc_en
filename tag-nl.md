@@ -1,31 +1,34 @@
-# <div align="center">nl - 换行</div> #
+# <div align="center">nl - Newline</div> #
 
 &lt;nl&gt;
 <pre>
-在模板中输出换行符
+Output newline in the template
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-在模板中根据不同的操作系统，输出换行符，并可指定输出的换行符数量。
+In the template according to the different operating system, 
+output newline, and specify output newline number.
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>count（可选）</b>
-指定输出的换行符数量，值必须为正整数
+<b>count（optional）</b>
+The number of newline characters in the output, the value must 
+be a positive integer
 </pre>
 
-#### 其它 ####
+#### Other ####
 
 <pre>
-在模板中输入"\n",并不能真正输出换行符和实现换行操作，
-而只能输出字符"\n"本身的字符。所以需要用这个标签输出。
-其功能也可由&lt;% out.wirte("\n"); %&gt;实现。
+Enter "\n" in the template, and can not really realize the output 
+line and operation line, and can only output the character "\n" 
+itself. So you need to use this tag to output. Its function also 
+can be made by &lt;% out.wirte("\n"); %&gt; realization.
 
-不同系统输出的换行符不一样：
+Different output newline is not the same：
 Mac \r
 Unix/Linux \n
 Windows \n or \r\n
@@ -33,10 +36,10 @@ Windows \n or \r\n
 
 ----------
 
-#### 实例演示 ####
+#### Examples ####
 
 <pre>
-例子1
+Example 1
 </pre>
 
 

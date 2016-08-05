@@ -1,30 +1,32 @@
-# <div align="center">任务标签</div> #
+# <div align="center">Task Tag</div> #
 
 ----------
 
-###介绍###
+###Introduce###
 
 <pre>
-在模板中，我们可以通过一系列以t开头的标签，获取调用这个模板的任务信息。
-下图中任务信息，对应指定的标签。
+In the template, we can start with a series of t tags, 
+to get the task information to call this template.
+Task information in the image below, corresponding to the 
+specified tag.
 </pre>
 
 
 
 ![](image/tag_task_message.png)
 
-###任务标签###
+###Task Tag###
 
-* <a href="tag-task-group.html"><t:group/></a>：模型组
-* <a href="tag-task-action.html"><t:action/></a>：action类
-* <a href="tag-task-template.html"><t:template/></a>：模板路径
-* <a href="tag-task-directory.html"><t:directory/></a>：生成文件所在目录
-* <a href="tag-task-name.html"><t:name/></a>：生成文件名
-* <a href="tag-task-ext.html"><t:ext/></a>：生成文件扩展名
-* <a href="tag-task-encoding.html"><t:encoding/></a>：生成文件编码
-* <a href="tag-task-mode.html"><t:mode/></a>：生成文件模式(新建:new, 合并:merge, 覆盖:overlay)
+* <a href="tag-task-group.html"><t:group/></a>：Group
+* <a href="tag-task-action.html"><t:action/></a>：Action
+* <a href="tag-task-template.html"><t:template/></a>：Template path
+* <a href="tag-task-directory.html"><t:directory/></a>：Generate file directory
+* <a href="tag-task-name.html"><t:name/></a>：Generate file name
+* <a href="tag-task-ext.html"><t:ext/></a>：Generate file extension
+* <a href="tag-task-encoding.html"><t:encoding/></a>：Generate file encoding
+* <a href="tag-task-mode.html"><t:mode/></a>：Generate file mode (new, merge, overlay)
 
-###实例演示###
+###Examples###
 
 ----------
 

@@ -1,129 +1,132 @@
-# <div align="center">f:number - 格式化数字</div> #
+# <div align="center">f:number - Formatting Number</div> #
 
 &lt;f:number&gt;
 <pre>
-格式化数字
+Formatting number
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-根据标签内填写的数字符串，输出格式化的数字，或者设置格式化的数字参数。
+According to the number of tags to fill in the string, 
+the output format of the number, or set the format of the digital parameters.
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>var（可选）</b>
-存储格式化数字的变量
-注：如果设置了var属性，不会输出结果
-</pre>
-
-<pre>
-<b>setScope（可选）</b>
-设置变量的作用域
-
-<b>属性</b>
-ontext:设置变量到context中（默认）
-session:设置变量到session中
+<b>var（optional）</b>
+Set the variable to format the number
+Note: if the var property is set, the result will not be output
 </pre>
 
 <pre>
-<b>pattern（可选）</b>
-格式化的样式
+<b>setScope（optional）</b>
+Set the scope of the variable
 
-如: 12.34
+<b>property</b>
+ontext:Set variable to context(default)
+session:Set variable to session
+</pre>
+
+<pre>
+<b>pattern（optional）</b>
+Format pattern
+
+e.g.: 12.34
 "0.0"      ->   12.3      
 "#.#"      ->   12.3
 "000.000"  ->   012.340
 "###.###"  ->   12.34 
-具体用法参考java.text.DecimalFormat
+Specific usage reference java.text.DecimalFormat
 </pre>
 
 <pre>
-<b>type（可选）</b>
-类型
+<b>type（optional）</b>
+Number type
 
-<b>属性</b>
-number:数值（默认）
-currency:货币
-percent:百分数
+<b>property</b>
+number:number type(default)
+currency:currency type
+percent:percent type
 </pre>
 
 <pre>
-<b>groupingUsed（可选）</b>
-是否对数字分组
+<b>groupingUsed（optional）</b>
+Whether to group number
 
-<b>属性</b>
-true:是
-false:否（默认）
+<b>property</b>
+true:yes
+false:no(default)
 </pre>
 
 <pre>
-<b>currencyCode（可选）</b>
-ISO 4217 货币码，默认为当前区域货的货币码，当type="currency"时可用
-如：
-人民币是 CNY
-美元是 USD
+<b>currencyCode（optional）</b>
+ISO 4217 currency code, default is the local currency code, 
+when type= "currency" is available
+e.g.：
+China Yuan renminbi is CNY
+US dollar is USD
 </pre>
 
 <pre>
-<b>currencySymbol（可选）</b>
-货币符号，默认为当前区域的货币符号，当type="currency"时可用
-如：
-人民币是 ￥
-美元是 $
+<b>currencySymbol（optional）</b>
+currency symbol, default is the local currency symbol, 
+when type= "currency" is available
+e.g.：
+China Yuan renminbi is ￥
+US dollar is $
 </pre>
 
 <pre>
-<b>locale（可选）</b>
-国家，默认为当前所在国
-如：
-中国是 zh_CN
-美国是 en_US
+<b>locale（optional）</b>
+Country, default is the local country
+e.g.：
+China is zh_CN
+America is en_US
 </pre>
 
 <pre>
-<b>integerOnly（可选）</b>
-是否只解析整型数
+<b>integerOnly（optional）</b>
+Sets whether or not numbers should be parsed as integers only
 
-<b>属性</b>
-true:是，整数型
-false:否，浮点数（默认）
+<b>property</b>
+true:yes
+false:no(default)
 </pre>
 
 <pre>
-<b>maxIntegerDigits（可选）</b>
-整型数最大的位数
+<b>maxIntegerDigits（optional）</b>
+Sets the maximum number of digits allowed in the integer portion of a number
 </pre>
 
 <pre>
-<b>minIntegerDigits（可选）</b>
-整型数最小的位数
+<b>minIntegerDigits（optional）</b>
+Sets the minimum number of digits allowed in the integer portion of a number
 </pre>
 
 <pre>
-<b>maxFractionDigits（可选）</b>
-小数点后最大的位数
+<b>maxFractionDigits（optional）</b>
+Sets the maximum number of digits allowed in the fraction portion of a number
 </pre>
 
 <pre>
-<b>minFractionDigits（可选）</b>
-小数点后最小的位数
+<b>minFractionDigits（optional）</b>
+Sets the minimum number of digits allowed in the fraction portion of a number
 </pre>
 
-#### 其它 ####
+#### Other ####
 
 <pre>
-如果设置了var属性，不会输出结果
+If the var is set, the result will not be output
 </pre>
 
 ----------
 
-#### 实例演示 ####
+#### Examples ####
 
 <pre>
-例子1
+Example 1
 </pre>
 
 ![](image/f_number_tag_template1.png)

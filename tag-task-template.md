@@ -1,14 +1,14 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:template - 模板路径</div> ###
+### <div align="center">t:template - Template Path</div> ###
 
 &lt;t:template&gt;
 <pre>
-得到任务的模板路径
+Template path for the task
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-得到的模板路径是从当前项目开始。
+The template path to get started from the current project.
 </pre>

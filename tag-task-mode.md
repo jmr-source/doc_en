@@ -1,14 +1,14 @@
-<a href="head-tag-task.html">查看详情请点此</a>
+<a href="head-tag-task.html">Please click here for more details</a>
 
-### <div align="center">t:mode - 生成文件模式</div> ###
+### <div align="center">t:mode - Generate File Mode</div> ###
 
 &lt;t:mode&gt;
 <pre>
-得到任务的生成文件模式
+Get task generated file mode
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-新建输出new,合并输出merge，覆盖输出overlay。
+New output new, merge output merge, overlay output overlay.
 </pre>
