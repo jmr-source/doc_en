@@ -4,23 +4,27 @@
 
 &lt;java:package&gt;
 <pre>
-得到java类的包名。
+得到java类的包名
 </pre>
 
 #### 属性 ####
 
 <pre>
-<b>packageNameVar（可选）：设置一个参数存放得到的包名，默认存放到context中</b>。
+<b>packageNameVar（可选）</b>
+设置一个变量存放得到的包名，默认存放到context中
 </pre>
 
 <pre>
-<b>valueScope(可选)：packageNameVar参数的作用域。</b>
-context:参数设置到context中(默认)
-session:参数设置到session中
+<b>setScope（可选）</b>
+设置packageNameVar的作用域
+
+<b>属性</b>
+context:设置参数到context中（默认）
+session:设置参数到session中
 </pre>
 
-#### 说明 ####
+#### 其它 ####
 
 <pre>
-如果生成的路径不为java源文件夹，则输出空字符。
+如果生成的路径不为java源文件夹，则输出为空字符串。
 </pre>

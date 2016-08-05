@@ -2,7 +2,7 @@
 
 &lt;include&gt;
 <pre>
-用于模板之间的嵌套调用。
+用于模板之间的嵌套调用
 </pre>
 
 #### 说明 ####
@@ -14,13 +14,14 @@
 #### 属性 ####
 
 <pre>
-src（必须）:嵌套的模板路径，可以是相对模板路径，也可以是相对项目根路径的路径。
+<b>src（必须）</b>
+嵌套的模板路径，可以是相对当前模板的路径，也可以是相对项目的根路径
 </pre>
 
 #### 其它 ####
 
 <pre>
-被嵌套的模板和当前模板，共享同一个context，它们有共同的参数。
+被嵌套的模板和当前模板，共享同一个context，它们有共同的变量作用域。
 </pre>
 
 ----------
@@ -34,16 +35,16 @@ src（必须）:嵌套的模板路径，可以是相对模板路径，也可以�
 ![](image/include_main.png)
 
 <pre>
--嵌套模板-
+-头部嵌套模板-
 </pre>
-![](image/include_mail_template.png)
+![](image/include_head.png)
 
 <pre>
--Action-
+-尾部嵌套模板-
 </pre>
-![](image/include_mail_action.png)
+![](image/include_tail.png)
 
 <pre>
 -生成文件-
 </pre>
-![](image/include_mail_result.png)
+![](image/include_result.png)

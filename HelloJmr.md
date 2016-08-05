@@ -124,7 +124,7 @@ Jmr全称Jet Model Robotization：基于Jet模板引擎的自动化工具。
 点击运行后，在“运行”视图中，会显示运行任务的信息。
 
 ![](image/new_jet_runner_view.png)
-
+对比下模板和生成的内容
 点击打开后，我们可以看到生成的文件。
 
 ![](image/new_jet_result.png)
