@@ -9,7 +9,7 @@ For formatting output
 #### Description ####
 
 <pre>
-Output the text in the label to the specified format.
+Output the tag content with the specified format.
 </pre>
 
 #### Property ####
@@ -59,10 +59,10 @@ e.g.
 #### Examples ####
 
 <pre>
-<b>Please refer to the specific usage：String.format(String fmt, Object... args)</b>
+<b>Please refer：String.format(String fmt, Object... args)</b>
 String fmt     --&gt;   parrten = ""
 Object... args --&gt;   values = ""
-<b>Complete placeholder format： %[index$][flags]*[width][.precision]conversion</b>
+<b>%[index$][flags]*[width][.precision]conversion</b>
 </pre>
 
 <pre>

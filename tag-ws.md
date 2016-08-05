@@ -8,8 +8,7 @@ Output space in the template
 #### Description ####
 
 <pre>
-Output in the template space, and the number of spaces can 
-be specified.
+Output space in the template, can also set spaces count..
 </pre>
 
 #### Property ####
@@ -23,8 +22,7 @@ the value must be a positive integer
 #### Other ####
 
 <pre>
-The function can also be typed in the template space, 
-or by &lt;% out.wirte(" "); %&gt; implementation.
+You can also use &lt;% out.wirte(" "); %&gt; to the same effect.
 </pre>
 
 ----------

@@ -4,12 +4,12 @@
 
 &lt;t:action&gt;
 <pre>
-Get the task of the action class
+Get the action class of task
 </pre>
 
 #### Description ####
 
 <pre>
 Get the full class name (package name + class name), 
-if the task is not specified, the output is null.
+if the task is not set, the output is empty string.
 </pre>

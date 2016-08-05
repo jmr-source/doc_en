@@ -8,8 +8,7 @@ Output tab in the template
 #### Description ####
 
 <pre>
-Output tab in the template, and the number of tabs that can 
-be specified.
+Output tab in the template, can also set tabs count.
 </pre>
 
 #### Property ####
@@ -23,10 +22,10 @@ the value must be a positive integer
 #### Other ####
 
 <pre>
-Enter the "\t" in the template, and can not really output tabs 
-and achieve the tab operation, and can only output the character 
-"\t" itself. So you need to use this tag to output. Its function 
-also can be made by &lt;% out.wirte("\t"); %&gt; realization.
+Enter the "\t" in the template, and can not really output tabs, 
+and can only output the character "\t" itself. 
+So you need to use this tag to output. You can also 
+use &lt;% out.wirte("\t"); %&gt; to the same effect.
 </pre>
 
 ----------

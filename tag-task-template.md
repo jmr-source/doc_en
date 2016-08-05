@@ -4,11 +4,11 @@
 
 &lt;t:template&gt;
 <pre>
-Template path for the task
+Get the template path of task
 </pre>
 
 #### Description ####
 
 <pre>
-The template path to get started from the current project.
+The template path is a path relative to the current project.
 </pre>

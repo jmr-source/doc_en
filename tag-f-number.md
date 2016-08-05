@@ -8,8 +8,7 @@ Formatting number
 #### Description ####
 
 <pre>
-According to the number of tags to fill in the string, 
-the output format of the number, or set the format of the digital parameters.
+According to the content of tag, output format of the number, or set the variable.
 </pre>
 
 #### Property ####
@@ -38,7 +37,7 @@ e.g.: 12.34
 "#.#"      ->   12.3
 "000.000"  ->   012.340
 "###.###"  ->   12.34 
-Specific usage reference java.text.DecimalFormat
+reference java.text.DecimalFormat
 </pre>
 
 <pre>
