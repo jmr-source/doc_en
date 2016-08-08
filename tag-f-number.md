@@ -25,7 +25,7 @@ Note: if the var property is set, the result will not be output
 Set the scope of the variable
 
 <b>property</b>
-ontext:Set variable to context(default)
+context:Set variable to context(default)
 session:Set variable to session
 </pre>
 
@@ -71,7 +71,7 @@ US dollar is USD
 
 <pre>
 <b>currencySymbol（optional）</b>
-currency symbol, default is the local currency symbol, 
+Currency symbol, default is the local currency symbol, 
 when type= "currency" is available
 e.g.：
 China Yuan renminbi is ￥
