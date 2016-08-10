@@ -4,11 +4,11 @@
 
 &lt;t:directory&gt;
 <pre>
-Get the task of generating the file directory
+Get the generate directory of task
 </pre>
 
 #### Description ####
 
 <pre>
-The resulting directory is from the current project.
+The directory path is a path relative to the current project.
 </pre>

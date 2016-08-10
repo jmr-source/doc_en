@@ -4,12 +4,12 @@
 
 &lt;t:group&gt;
 <pre>
-Task model group name
+Get the model group name of task
 </pre>
 
 #### Description ####
 
 <pre>
-Get the model group name of the task, if the task is not specified, 
-then the output null character.
+Get the model group name of the task, if the task is not set, 
+the output is empty string.
 </pre>

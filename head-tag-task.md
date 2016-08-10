@@ -5,10 +5,7 @@
 ###Introduce###
 
 <pre>
-In the template, we can start with a series of t tags, 
-to get the task information to call this template.
-Task information in the image below, corresponding to the 
-specified tag.
+We can use tags of namespace "t" to get the task information in the template.
 </pre>
 
 
