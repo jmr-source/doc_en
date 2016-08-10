@@ -1,259 +1,283 @@
-# <div align="center">get - 得到变量值</div> #
+# <div align="center">get - Get Variable Values</div> #
 
 &lt;get&gt;
 <pre>
-得到变量值
+Get variable values
 </pre>
 
-#### 说明 ####
+#### Description ####
 
 <pre>
-从作用域context或者session中得到变量，
-可使用Ognl表达式得到变量的属性和方法，或者自定义ognl类型变量
+Get variables from the scope context or session,
+Ognl expressions can be used to get the attributes and methods 
+of variables, or custom ognl type variables
 </pre>
 
-#### 属性 ####
+#### Property ####
 
 <pre>
-<b>value（必须）</b>
-得到变量值，也可以得到变量相关的Ognl值
-</pre>
-
-<pre>
-<b>valueScope（可选）</b>
-变量的作用域
-
-<b>属性</b>
-context:从context中得到变量（默认）
-session:从session中得到变量
+<b>value（required）</b>
+Get the variable value, variable relevant Ognl values are also obtained.
 </pre>
 
 <pre>
-<b>case（可选）</b>
-字符串大小写转换，可以使用“|”包含多个操作，如 lower|plural
+<b>valueScope（optional）</b>
+Variable scope
 
-<b>属性</b>
-lr:字符串转成小写（同lower）
-ur:字符串转成大写 （同upper）
-hlr:头字母转成小写 （同headLower）
-hur:头字母转成大写（同headUpper）
-lower:字符串转成小写
-upper:字符串转成大写
-headLower:头字母转成小写
-headUpper:头字母转成大写
-plural:复数格式
-singular:单数格式
+<b>property</b>
+context:Set variable to context(default)
+session:Set variable to session
 </pre>
 
 <pre>
-<b>trim（可选）</b>
-是否保留输出值的前后空白字符
+<b>case（optional）</b>
+String case conversion, you can use the "" contains more than one 
+operation, e.g. lower|plural
 
-<b>属性</b>
-false:保留输出值的前后空白字符（默认）
-true:删除输出值的前后空格（包括换行符）
+<b>property</b>
+lr:String to lowercase (with lower)
+ur:String to uppercase (with upper)
+hlr:Head letters to lowercase (with headLower)
+hur:Head letters to uppercase (with headUpper)
+lower:String to lowercase
+upper:String to uppercase
+headLower:Head letters to lowercase
+headUpper:Head letters to uppercase
+plural:Plural form
+singular:Singular form
 </pre>
 
-#### 用法详解 ####
+<pre>
+<b>trim（optional）</b>
+Whether to retain the output value of the front and back 
+blank characters
 
-##### &lt;get&gt;输出规则 #####
+<b>property</b>
+false:To retain the output value of the front and back blank 
+characters（default）
+true:Delete the output value of the front and back spaces（Including 
+the newline）
+</pre>
 
-以下的方式都可以输出"Hello Jmr!"，  
-四种方式本质上都是转换成out.write(Object object)
+#### Usage Detailed ####
+
+##### &lt;get&gt;Output Rule #####
+
+The following ways can be output "Hello Jmr!"，  
+The four way is essentially converted into out.write (Object object)
 
 ![](image/new_jet_compare.png)
 
-输出的值：
+Output value：
 <pre>
-基本类型：输出的值是它们本身；
-字符串：输出的是字符串；
-Object：输出toString()方法的返回值。
+Basic types：The output value is their own；
+String：The output is string；
+Object：Return value of output toString () method.
 </pre>
 
 ![](image/tag_get_out1.png)
 
 <pre>
-用&lt;get&gt;得到它们的值
+Using &lt;get&gt; get their value
 </pre>
 
 ![](image/tag_get_out2.png)
 
 <pre>
-输出结果可以看到，List和array调用了toString()方法，
-array因为没重写toString()方法，所以返回的是一个地址。
+Output results can be seen, List and array call the toString () method, 
+array because there is no override toString () method, So the return 
+is an address.
 </pre>
 
 ![](image/tag_get_out3.png)
 
 <pre>
-小贴士：在&lt;get&gt;的value的中，把鼠标放在上面，或者选中，可以提示出这个变量的值。
+Tip: in the &lt;get&gt; value, place the mouse over it, or selected, 
+you can indicate the value of this variable.
 </pre>
 
 ![](image/tag_get_out4.png)
 
-##### &lt;get&gt;获取值的来源和作用域 #####
+##### &lt;get&gt;Source And Scope Of Value #####
 
-从context和session中获取变量，那么如何设置变量存放到context和session中呢？
+Get variables from context and session, then how to set the variables 
+to context and session? 
 
-1.在context中设置变量，作用域为当前任务，变量只能在当前任务下的模板和action中共享。
+1.Set the variable in the context, the scope for the current task, the 
+variable can only be shared in the current task of the template and action.
 <pre>
-此处在模板的&lt;% %&gt;中设置context的值，当然，也可以在action中设置context,
-这里设置了String、boolean、int和List类型的变量。
+Here in the template &lt;% %&gt; set the value of context, of course, 
+can also be set context in the action, here set the String, boolean, 
+int and List types of variables.
 </pre>
 
 ![](image/tag_get_from1.png)
 
 <pre>
-用&lt;get&gt;得到它们的值
+Using &lt;get&gt; get their value
 </pre>
 
 ![](image/tag_get_from2.png)
 
 <pre>
-输出结果
+Output result
 </pre>
 
 ![](image/tag_get_from3.png)
 
 <pre>
-小贴士：在&lt;get&gt;的value中按提示键可以提示出可用的变量值。
+Tips: in the &lt;get&gt; value according to the prompt key can 
+indicate the value of the available variables.
 </pre>
 
 ![](image/tag_get_from10.png)
 
-2.在session中设置变量，作用域跨任务，变量能在多个任务的模板和action中共享。
+2.Set the variable in the session, the scope for the cross task, the 
+variable can be shared in the multiple task of the template and action.
 <pre>
-此处在模板的&lt;% %&gt;中设置context的值，当然，也可以在action中设置session,
-这里设置了String、boolean、int和Map类型的变量。
+Here in the template &lt;% %&gt; set the value of context, of course, 
+can also be set session in the action, here set the String, boolean, 
+int and Map types of variables.
 </pre>
 
 ![](image/tag_get_from4.png)
 
 <pre>
-用&lt;get&gt;得到它们的值，作用域valueScope输入session
+Using &lt;get&gt; get their value, Scope valueScope input session
 </pre>
 
 ![](image/tag_get_from5.png)
 
 <pre>
-输出结果
+Output result
 </pre>
 
 ![](image/tag_get_from6.png)
 
 <pre>
-小贴士：在&lt;get&gt;的value中按提示键可以提示出可用的变量值，
-此处会根据作用域提示对应的变量。
+Tips: in the &lt;get&gt; value according to the prompt key can 
+indicate the value of the available variables, the corresponding 
+variables are based on the scope of action.
 </pre>
 
 ![](image/tag_get_from11.png)
 
-3.在action中设置变量
+3.Set the variable in the action
 <pre>
-在action中可以设置context或者session变量，此处我们设置context变量为例。
-这里设置了String、boolean、int和double[]类型的变量。
+In action can be set to context or session variables, where we 
+set the context variable as an example. Here set the String, boolean, 
+int and double[] types of variables.
 </pre>
 
 ![](image/tag_get_from7.png)
 
 <pre>
-用&lt;get&gt;得到它们的值
+Using &lt;get&gt; get their value
 </pre>
 
 ![](image/tag_get_from8.png)
 
 <pre>
-输出结果
+Output result
 </pre>
 
 ![](image/tag_get_from9.png)
 
 <pre>
-小贴士：在&lt;get&gt;的value中按提示键可以提示出可用的变量值，
-此处提示需要在模板的菜单中选中需要的action。
+Tips: in the &lt;get&gt; value according to the prompt key can 
+indicate the value of the available variables, here prompted to 
+select the required action in the menu of the template.
 </pre>
 
 ![](image/tag_get_from12.png)
 
 ![](image/tag_get_from13.png)
 
-4.在&lt;set&gt;、&lt;for&gt;等标签的var变量。
+4.Set the variable in the &lt;set&gt;、&lt;for&gt; and other label.
 <pre>
-在set、for中设置的变量本质上也是设置在context或者session中。
+The variables set in set and for are essentially set in context or session.
 </pre>
 
 ![](image/tag_get_from14.png)
 
 <pre>
-用&lt;get&gt;得到它们的值，其中list用for标签循环输出，分隔符用","
+Using &lt;get&gt; get their value, where for with the list tag cycle 
+output, separator with ","
 </pre>
 
 ![](image/tag_get_from15.png)
 
 <pre>
-输出结果
+Output result
 </pre>
 
 ![](image/tag_get_from16.png)
 
-##### &lt;get&gt;的ognl使用方法 #####
+##### &lt;get&gt; ognl Using Method #####
 
-get不仅可以获得变量值，还可以得到变量的Ognl属性和方法的值
+Get not only can get the variable value, but also can get the value 
+of the Ognl attribute and method of the variable.
 
 <pre>
-以下是一个Student类，它有id和name这2个属性
+The following is a Student class, which has 2 properties, id and name
 </pre>
 
 ![](image/tag_get_ognl1.png)
 
 <pre>
-在action中new一个Student对象
+New a Student object in the action
 </pre>
 
 ![](image/tag_get_ognl2.png)
 
 <pre>
-把模板中的action指向GetTagAction
+Point the action in the template to GetTagAction
 </pre>
 
 ![](image/tag_get_from12.png)
 
-可以得到对象的ognl values 和ognl methods
+Can get the object's ognl values and ognl methods
 <pre>
-Ognl values:对象的属性如果有对应的getXXX()方法， 就可以得到它本身
-student有id和name，因为id和name有对应的getId和getName方法，所以可以得到它们的Ognl值。
+Ognl values:Object properties, if there is a corresponding getXXX() 
+method, you can get it itself 
+Student have id and name, because id and name have the corresponding 
+getId and getName methods, so they can get the Ognl value.
 
-Ognl methods:对象的方法
-对象包含的方法，如果方法有返回值，可以得到返回值。
+Ognl methods:Object method 
+Object that contains the method, if the method has a return 
+value, you can get the return value.
 </pre>
 
 ![](image/tag_get_ognl3.png)
 
 <pre>
-不仅得到对象的Ognl值，还可以链式的得到其对应的Ognl值。
-如student.name为String类型，所以还可以得到name对应的String方法。
+Not only get the Ognl value of the object, but also can link to get 
+its corresponding Ognl value.
+e.g. Student.name for the String type, so you can also get the 
+String corresponding to the name method.
 </pre>
 
 ![](image/tag_get_ognl4.png)
 
 <pre>
-用&lt;get&gt;得到它们的值。
+Using &lt;get&gt; get their value.
 </pre>
 
 ![](image/tag_get_ognl5.png)
 
 <pre>
-输出结果
+Output result
 </pre>
 
 ![](image/tag_get_ognl6.png)
 
 <pre>
-小贴士：在&lt;get&gt;的value的中，把鼠标放在上面，或者选中，可以提示出这个变量的Ognl值。
+Tips: in the &lt;get&gt; value, the mouse on the above, or selected, 
+you can indicate the Ognl value of the variable.
 </pre>
 
-<pre>鼠标放在上面</pre>
+<pre>The mouse on the above</pre>
 ![](image/tag_get_ognl7.png)
 
-<pre>选中需要的部分</pre>
+<pre>Select the required parts</pre>
 ![](image/tag_get_ognl8.png)
